@@ -1,0 +1,46 @@
+.button-container {
+	text-align: center;
+	line-height: 100vh;
+	vertical-align: middle;
+	height: 100vh;
+}
+
+.giant-button {
+	background: lightblue;
+	height: 150px;
+	width: 350px;
+	font-size: 2rem;
+	border-color: blue;
+}
+
+.popup-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	line-height: 100vh;
+	text-align: center;
+	vertical-align: middle;
+	background: lightgray;
+
+}
+
+.popup {
+	display: inline-block;
+	line-height: initial;
+	background: peachpuff;
+	width:	500px;
+	height: 300px	
+}
+
+.popup h1 {
+	padding-top: 80px;
+}
+
+.popup button {
+	width:	175px;
+	height: 45px;
+	font-size: 1rem;
+
+}

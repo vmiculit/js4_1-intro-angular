@@ -9,8 +9,16 @@
 	<title>JS4.1 - Intro to Angular Part 3</title>
 </head>
 <body ng-controller="partThreeTroller">
+<div class="button-container">
+	<button ng-click="switchMyPopup()" class="giant-button">Click me!</button>
+</div>
 
-
+<div ng-if="popItSwitch" class="popup-container">
+	<div class="popup">
+	<h1>Boom!</h1>
+	<button ng-click="shutItDown()">Shut it down!</button>
+	</div>
+</div>
 </body>
 
 </html>
