@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="jsIntro">
+  <head>
+  	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<title>JS4.1 - Intro to Angular Part 1</title>
+</head>
+<body ng-controller="partOneTroller">
+
+		<h1>{{myGreeting}}</h1>
+
+		<div>
+			<ul ng-repeat="item in myList">
+				<li>{{item}}</li>
+			</ul>
+		</div>
+
+		<button ng-click = "revealTitle()" ng-hide = "hideTitleButton">Click me!</button>
+
+		<button ng-click = "revealList()" ng-hide = "hideListButton">Click me too!</button>
+
+</body>
+
+</html>

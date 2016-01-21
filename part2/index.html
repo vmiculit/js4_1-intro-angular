@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="jsIntro">
+  <head>
+  	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<title>JS4.1 - Intro to Angular Part 2</title>
+</head>
+<body ng-controller="partTwoTroller">
+
+		<h1>Major Title{{boom}}</h1>
+
+		<p ng-mouseover = "lightItUp(0)" ng-mouseleave = "lightItDown(0)" ng-class = "{textcolor: color[0]}">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pretium eu ligula tristique faucibus. Nullam dapibus scelerisque metus, quis finibus nulla egestas vitae. Nulla at convallis orci. Quisque pulvinar lectus at sodales posuere. Donec iaculis sem pretium egestas aliquam. Vestibulum aliquet scelerisque sagittis. 
+		</p>
+		<p ng-mouseover = "lightItUp(1)" ng-mouseleave = "lightItDown(1)" ng-class = "{textcolor: color[1]}">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pretium eu ligula tristique faucibus. Nullam dapibus scelerisque metus, quis finibus nulla egestas vitae. Nulla at convallis orci. Quisque pulvinar lectus at sodales posuere. Donec iaculis sem pretium egestas aliquam. Vestibulum aliquet scelerisque sagittis. 
+		</p>
+
+		<a ng-click = "areYouSure(0, $event)" ng-if = "hideMyLink[0]" href = "http://google.com">Read More...</a>
+
+		<h2>Subtitle{{boom}}</h2>
+
+		<p ng-mouseover = "lightItUp(2)" ng-mouseleave = "lightItDown(2)" ng-class = "{textcolor: color[2]}">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pretium eu ligula tristique faucibus. Nullam dapibus scelerisque metus, quis finibus nulla egestas vitae. Nulla at convallis orci. Quisque pulvinar lectus at sodales posuere. Donec iaculis sem pretium egestas aliquam. Vestibulum aliquet scelerisque sagittis. 
+		</p>
+
+		<a ng-click = "areYouSure(1, $event)" ng-if = "hideMyLink[1]" href = "http://google.com">Read More...</a>
+
+		<h2>Subtitle{{boom}}</h2>
+
+		<p ng-mouseover = "lightItUp(3)" ng-mouseleave = "lightItDown(3)" ng-class = "{textcolor: color[3]}">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pretium eu ligula tristique faucibus. Nullam dapibus scelerisque metus, quis finibus nulla egestas vitae. Nulla at convallis orci. Quisque pulvinar lectus at sodales posuere. Donec iaculis sem pretium egestas aliquam. Vestibulum aliquet scelerisque sagittis. 
+		</p>
+
+		<a ng-click = "areYouSure(2, $event)" ng-if = "hideMyLink[2]" href = "http://google.com">Read More...</a>
+
+</body>
+
+</html>
